@@ -21,11 +21,7 @@ def start():
     }
     checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
    # print(res)
-
-if sever ='on':
-            requests.get('https://sc.ftqq.com/' + sckey + '.send?text='废文网签到成功')
-    else:
-        requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
+    requests.get('https://sc.ftqq.com/' + sckey + '.send?text='废文网签到成功')
 
 def main_handler(event, context):
   return start()
