@@ -22,8 +22,8 @@ def start():
     checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
    # print(res)
  
-        if sever == 'on':
-           requests.get('sctapi.ftqq.com/'+sckey+'.send?text='ok')
+if sever == 'on':
+       requests.get('sctapi.ftqq.com/'+sckey+'.send?text='ok')
 
 def main_handler(event, context):
   return start()
