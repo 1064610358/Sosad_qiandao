@@ -21,14 +21,9 @@ def start():
     }
     checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
    # print(res)
-  
-    if 'message' in checkin.text:
-        mess = checkin.json()['message']
-        time = state.json()['data']['leftDays']
-        time = time.split('.')[0]
-        print(time)
+ 
         if sever == 'on':
-            requests.get('https://sc.ftqq.com/'+sckey+'.send?text='废文网签到成功')
+           requests.get('sctapi.ftqq.com/'+sckey+'.send?text='ok')
 
 def main_handler(event, context):
   return start()
