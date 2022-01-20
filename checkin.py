@@ -23,7 +23,7 @@ def start():
    # print(res)
  
 if sever == 'on':
-       requests.get('sctapi.ftqq.com/'+sckey+'.send?text='ok')
+       requests.get('https://sc.ftqq.com/' + sckey + '.send?text=ok)
 
 def main_handler(event, context):
   return start()
