@@ -23,7 +23,7 @@ def start():
    # print(res)
  
 if sever == 'on':
-       requests.get('https://sc.ftqq.com/' + sckey + '.send?text="OK")
+       requests.get('https://sc.ftqq.com/' + sckey + '.send?text="OK"')
 
 def main_handler(event, context):
   return start()
