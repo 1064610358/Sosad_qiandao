@@ -17,7 +17,7 @@ def start():
     origin = "https://www.xn--pxtr7m5ny.com"
     useragent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
     payload={
-        'token': '1n5nc1SV2A6xX8xc2em4vIaQ3dyD1f7dWEclkvP8'
+        'token': '6kRu2gDiZAaM95eq8EpMcuVo5bkEOdW6UzEivY1t'
     }
     checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
    # print(res)
